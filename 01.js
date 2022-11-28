@@ -11,7 +11,14 @@ function soloNumeros(array) {
   // soloNumeros([1, 'Henry', 2]) debe retornar [1, 2]
 
   // Tu código aca:
-
+  var numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+  answer = []
+  array.forEach(element => {
+      if(numeros.includes(element)){
+          answer.push(element);
+      }
+  });
+  return answer;
 }
 
 // No modifiques nada debajo de esta linea //
